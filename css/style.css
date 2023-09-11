@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background: #1a0321;
+   
+    
+}
+
+header{
+    margin: auto;
+    width: 1100px;
+    height: 100px;
+    background: rgb(6, 6, 68);
+}
+header h1{
+    text-align:center;
+    color: white;
+    line-height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 64px;
+    text-shadow: 2px 2px 4px #000000;
+}
+nav{
+  list-style: none;
+  padding: 0;
+  background:#092327;
+  width: 1100px;
+  max-width: 2000px;
+  margin:auto;
+
+}
+nav li a {
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+    z-index: 1;
+	display: inline-block;
+	text-align: center;
+    position: relative;
+}
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+nav  li a::after{
+    content: "";
+    background-color: brown;
+    position:absolute;
+    left: 0;
+    top:calc (100% + 4px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+}
+nav ul li a.selected1::after,nav ul li a:hover::after{
+    opacity: 1;
+}
+nav ul li a.selected2::after,nav ul li a:hover::after{
+    opacity: 1;
+}
+nav ul li a.selected3::after,nav ul li a:hover::after{
+    opacity: 1;
+}
+/*
+.dos {
+    background: #ef3541; 
+}
+.tres {
+    background: #ef3541; 
+}*/
+/*
+nav li a:hover{
+    background: #ef3541;
+}*/
+section{
+    margin: auto;
+    position: relative;
+    left: 125px; 
+    width: 860px;
+    height: 500px;
+    background: white;
+    float:left;
+}
+aside{
+    list-style: none;
+    margin: auto;
+    width: 365px;
+    height: 500px;
+    background: rgb(83, 47, 117);
+    float: left;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    
+}
+aside .widget {
+    margin-bottom:20px;
+}
+aside .widget .titulo {
+    color:#ccc;
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+aside .widget ul{
+    list-style: none;
+}
+aside .widget ul li {
+    border-bottom: 1px solid rgb(255, 255, 255 ,.2);
+    padding: 10px 0;
+}
+aside .widget ul li a {
+     color: #fff;
+     text-decoration: none;   
+}
+aside .widget ul li a:hover{
+    color: rgb(172, 23, 23);
+}
+footer{
+    margin: auto;
+    position: relative;
+    left: 0px;
+    clear: both;
+    width: 1100px;
+    height: 50px;
+    background: #000000;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+/*ayuda*/
+.ayuda {
+    margin: auto;
+    position: relative;
+    left: 0px; 
+    width: 1100px;
+    height: 570px;
+    background: white;
+    text-align: center;
+}
+.titulodeayuda{
+    position: absolute;
+    top: 30%;
+    font-size: 60px;
+    color: #000000;
+}
+.ayuda p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 22px;
+    text-align: center;
+}
+.ayuda h3{
+       margin: 0 0 20px;
+       padding: 0;
+       font-size: 30px;
+}
+
+.search .search-bar{
+    position: relative;
+    left: 325px;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search .search-bar input {
+    
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: px 20px;
+    font-size: 20px;
+    color:black;
+
+}
+::placeholder{
+    color: black;
+}
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+}
+.ayuda .tituloayuda{
+    color: #ff7613;
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform:capitalize;
+}
+/*Contacto */
+.contacto{
+    margin: auto;
+    position: relative; 
+    width: 1040px;
+    height: 500px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.contacto .titulo {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.contacto .titulo::before{
+    content:'';
+    position: absolute;
+    left: 0    ;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#092327,#1a0321);
+}
+.contacto form .detalle{
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .detalle .input{
+    margin: 20px 0 12px 0;
+    width: calc(100%  / 2 -20px);
+}
+form .detalle .input .delta {
+    font-size: 18px;  
+}
+.detalle .input input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+form .elec .elec-titulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .elec .categoria{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.elec .categoria label{
+    display: flex;
+    align-items: center;
+}
+.elec .categoria .one {
+    height: 18px;
+    width: 18px;
+    background: #6a6a6a;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height:  100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg , #1a0321,#092327); 
+}
+form .button input:hover{
+    background:  linear-gradient(-135deg,#1a0321,#092327);
+}
+/*seleccion*/
+form .select-container{
+    display: flex;
+    position: relative;
+    min-width: 250px;
+    height: 50px;
+}
+form .select-container .select-box{
+    border: none;
+    appearance: none;
+    padding:  0 30px 0 15px;
+    width: 100%;
+    color: white;
+    background-color: #092327;
+     font-size: 15px;  
+}
+.form .input .select-container  .icon-container{
+    width: 50px;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+/*radio */
+.gender{
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+.gender label{
+    position: relative;
+    padding: 15px 40px 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
+.gender label input{
+    appearance: none;
+}
+.gender label i {
+    float: left;
+    left: 11px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gender label i::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #999;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.gender label i::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #999;
+    transform: rotate(3155deg);
+    transition: 0.5s;
+}
+.gender label input:checked ~ i::before{
+    width: 50%;
+    transform: rotate(45deg) translate(4px,4px);
+}
+.gender label input:checked ~ i::before ,
+.gender label input:checked ~ i::after{
+    background: #333;
+}
+.gender label span {
+    color: #999;
+    transition: 0.5s;
+}
+.gender label span::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   border: 3px solid #444;
+   width: 100%;
+   height: 100%;
+   border-radius: 30px;
+   box-sizing: border-box;
+   pointer-events: none;
+   transition: 0.5s;
+} 
+.gender label:hover span::before{
+    border: 3px solid var(--clr);
+}
